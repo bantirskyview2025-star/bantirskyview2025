@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Bantir Sky View</title>
+<style>
+body { font-family: Arial, sans-serif; background:#f2f2f2; padding:20px; }
+h1 { text-align:center; background:#ffcc00; padding:15px; border-radius:10px; }
+.menu-item { background:#fff; padding:15px; margin:15px 0; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+h2 { margin-bottom:5px; }
+.price { font-weight:bold; color:#d9534f; }
+button { background:#25d366; color:#fff; padding:8px 18px; border:none; border-radius:8px; margin-top:8px; }
+</style>
+</head>
+<body>
+<h1>MENU BANTIR SKY VIEW</h1>
+
+    <div class="menu-item">
+        <h2>Nasi Goreng Hongkong</h2>
+        <p class="price">Rp 17.500</p>
+        <button onclick="order('Nasi Goreng Hongkong')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Nasi Goreng Seafood</h2>
+        <p class="price">Rp 20.000</p>
+        <button onclick="order('Nasi Goreng Seafood')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Nasi Goreng Ayam</h2>
+        <p class="price">Rp 15.000</p>
+        <button onclick="order('Nasi Goreng Ayam')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Nasi Goreng Telor</h2>
+        <p class="price">Rp 13.000</p>
+        <button onclick="order('Nasi Goreng Telor')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Cumi Tepung Singapore</h2>
+        <p class="price">Rp 20.000</p>
+        <button onclick="order('Cumi Tepung Singapore')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Cumi Goreng Tepung</h2>
+        <p class="price">Rp 17.500</p>
+        <button onclick="order('Cumi Goreng Tepung')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Udang Tepung Singapore</h2>
+        <p class="price">Rp 20.000</p>
+        <button onclick="order('Udang Tepung Singapore')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Udang Goreng Tepung</h2>
+        <p class="price">Rp 17.500</p>
+        <button onclick="order('Udang Goreng Tepung')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Ayam Tepung Singapore</h2>
+        <p class="price">Rp 17.500</p>
+        <button onclick="order('Ayam Tepung Singapore')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Ayam Goreng Tepung</h2>
+        <p class="price">Rp 15.000</p>
+        <button onclick="order('Ayam Goreng Tepung')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Kwetiaw Goreng</h2>
+        <p class="price">Rp 17.500</p>
+        <button onclick="order('Kwetiaw Goreng')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Kwetiaw Kuah</h2>
+        <p class="price">Rp 17.500</p>
+        <button onclick="order('Kwetiaw Kuah')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Mie Goreng</h2>
+        <p class="price">Rp 17.500</p>
+        <button onclick="order('Mie Goreng')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Mie Kuah</h2>
+        <p class="price">Rp 17.500</p>
+        <button onclick="order('Mie Kuah')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Spaghetti BBQ</h2>
+        <p class="price">Rp 17.500</p>
+        <button onclick="order('Spaghetti BBQ')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Capcay Goreng Seafood</h2>
+        <p class="price">Rp 17.500</p>
+        <button onclick="order('Capcay Goreng Seafood')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Capcay Kuah Seafood</h2>
+        <p class="price">Rp 17.500</p>
+        <button onclick="order('Capcay Kuah Seafood')">Pesan via WhatsApp</button>
+    </div>
+    
+    <div class="menu-item">
+        <h2>Chicken Steak Crispy</h2>
+        <p class="price">Rp 15.000</p>
+        <button onclick="order('Chicken Steak Crispy')">Pesan via WhatsApp</button>
+    </div>
+    
+<script>
+function order(item){
+  let nomor = "085786855656";
+  let pesan = encodeURIComponent("Halo, saya mau pesan: " + item + " (jumlah: ... ) catatan: ...");
+  window.location.href = "https://wa.me/" + nomor + "?text=" + pesan;
+}
+</script>
+</body>
+</html>
